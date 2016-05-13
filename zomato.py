@@ -36,7 +36,6 @@ class Zomato:
                     return
             i = 0
             length = len(para_value)
-            print(length)
             while i < length:
                 if para_value[i] in self.endpoint_param[endpoint.lower()].keys():
                     all_parameters = all_parameters + str(para_value[i])+"="+str(para_value[i+1])+"&"
